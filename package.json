@@ -1,0 +1,36 @@
+{
+  "name": "express-request-tag",
+  "version": "1.0.0",
+  "description": "Express middleware used to tag requests for traceability",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlowder/express-request-tag.git"
+  },
+  "keywords": [
+    "http",
+    "request",
+    "tag",
+    "express",
+    "middleware",
+    "tracing"
+  ],
+  "author": "Douglas Lowder <douglas@lowder.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dlowder/express-request-tag/issues"
+  },
+  "homepage": "https://github.com/dlowder/express-request-tag",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.14.1",
+    "uuid": "^3.0.1"
+  }
+}
