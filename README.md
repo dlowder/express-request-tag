@@ -1,4 +1,5 @@
 # express-request-tag
+[![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 
 Express middleware used to uniquely tag requests for traceability.
@@ -51,5 +52,7 @@ npm test
 # License
 [MIT](http://opensource.org/licenses/MIT)
 
+[npm-image]: https://img.shields.io/npm/v/express-request-tag.svg
+[npm-url]: https://npmjs.org/package/express-request-tag
 [travis-url]: https://travis-ci.org/dlowder/express-request-tag
 [travis-image]: https://travis-ci.org/dlowder/express-request-tag.svg?branch=master
