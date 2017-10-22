@@ -41,11 +41,11 @@ var requestTag = require('express-request-tag');
 var app = express();
 app.use(requestTag());
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
     return res.status(200).json({ tag:req.tag });
 });
 
-app.listen(8080, function() {
+app.listen(8080, () => {
     console.log('Ready');
 });
 ```
@@ -61,17 +61,17 @@ var requestTag = require('express-request-tag');
 var app = express();
 app.use(requestTag({
     provider:{
-        generate:function() {
+        generate:() => {
             return `${os.hostname()}-${uuid.v4()}`;
         }
     }
 }));
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
     return res.status(200).json({ tag:req.tag });
 });
 
-app.listen(8080, function() {
+app.listen(8080, () => {
     console.log('Ready');
 });
 ```
